@@ -1,0 +1,41 @@
+{
+  "name": "dsh-plugin-python",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Model-facing python tool for DeepSeek Harness as an installable profile bundle: run Python with the bundled runtime (numpy, pandas, python-docx, python-pptx, openpyxl, Pillow, lxml, XlsxWriter).",
+  "type": "module",
+  "main": "lib/python.js",
+  "exports": {
+    ".": "./lib/python.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/python.js",
+    "cordis.patch.yml",
+    "README.md",
+    "cordis.patch.yml.tpl",
+    "install.ps1",
+    "install.mjs",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh-plugin",
+    "dsh-bundle",
+    "python"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jcy0chenyuan0/dsh-plugin-python.git"
+  },
+  "homepage": "https://github.com/jcy0chenyuan0/dsh-plugin-python#readme",
+  "bugs": {
+    "url": "https://github.com/jcy0chenyuan0/dsh-plugin-python/issues"
+  }
+}
